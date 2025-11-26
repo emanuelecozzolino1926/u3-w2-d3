@@ -26,10 +26,12 @@ const NetNavBar = () => {
 
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="me-auto mb-2 mb-lg-0">
-              <Link className="active" to="/">
+              <Link className="nav-link active" to="/">
                 Home
               </Link>
-              <Link to="/TVShows">TV Shows</Link>
+              <Link className="nav-link" to="/TVShows">
+                TV Shows
+              </Link>
               <Nav.Link href="#">Movies</Nav.Link>
               <Nav.Link href="#">Recently Added</Nav.Link>
               <Nav.Link href="#">My List</Nav.Link>

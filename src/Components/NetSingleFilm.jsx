@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom";
+
 const NetSingleFilm = function (props) {
   return (
-    <img className="img-fluid" src={props.film.Poster} alt={props.film.Title} />
+    <Link to={`/MovieDetails/${props.film.imdbID}`}>
+      <img
+        className="img-fluid"
+        src={props.film.Poster}
+        alt={props.film.Title}
+      />
+    </Link>
   );
 };
 
