@@ -4,6 +4,9 @@ import "./App.css";
 import NetNavBar from "./Components/NetNavBar";
 import NetContainer from "./Components/NetContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TVShows from "./Components/TVShows";
+import NetProfile from "./Components/NetProfile";
+import NetFooter from "./Components/NetFooter";
 
 function App() {
   return (
@@ -11,8 +14,11 @@ function App() {
       <BrowserRouter>
         <NetNavBar />
         <Routes>
-          <NetContainer />
+          <Route path="/" element={<NetContainer />} />
+          <Route path="/TVShows" element={<TVShows />} />
+          <Route path="/MyProfile" element={<NetProfile />} />
         </Routes>
+        <NetFooter />
       </BrowserRouter>
     </>
   );

@@ -15,8 +15,6 @@ const NetContainer = () => {
         <NetFilm name={"Harry Potter"} />
         <h4 className="my-3">New Releases</h4>
         <NetFilm name={"Mission Impossible"} />
-        <NetFooter />
-        <NetProfile />
       </Container>
     </>
   );

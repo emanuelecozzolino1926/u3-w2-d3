@@ -1,6 +1,10 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 const NetNavBar = () => {
+  const location = useLocation();
+
+  console.log(`Location`, location);
   return (
     <>
       <Navbar
@@ -22,10 +26,10 @@ const NetNavBar = () => {
 
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="me-auto mb-2 mb-lg-0">
-              <Nav.Link className="active" href="#">
+              <Link className="active" to="/">
                 Home
-              </Nav.Link>
-              <Nav.Link href="#">TV Shows</Nav.Link>
+              </Link>
+              <Link to="/TVShows">TV Shows</Link>
               <Nav.Link href="#">Movies</Nav.Link>
               <Nav.Link href="#">Recently Added</Nav.Link>
               <Nav.Link href="#">My List</Nav.Link>
@@ -33,9 +37,9 @@ const NetNavBar = () => {
 
             <div className="d-flex align-items-center">
               <i className="bi bi-search icons"></i>
-              <div id="kids" className="fw-bold ms-2">
+              <Link id="kids" className="fw-bold ms-2" to="/MyProfile">
                 KIDS
-              </div>
+              </Link>
               <i className="bi bi-bell icons ms-3"></i>
               <i className="bi bi-person-circle icons ms-3"></i>
             </div>

@@ -6,7 +6,6 @@ import NetEditProfileCont from "./NetEditProfileCont";
 const NetProfile = function () {
   return (
     <>
-      <NetNavBar />
       <Container>
         <NetEditProfileHead />
         <NetEditProfileCont />
